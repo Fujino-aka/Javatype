@@ -45,18 +45,18 @@ public class Removal
     }
     
     private int setId() {
-        if(msg.replyToMessage()) //TODO Resolve test
+        if(msg.replyToMessage() != null)
         {
             return msg.replyToMessage().from().id();
         }
-        else if(msg.forwardFrom())
+        else if(msg.forwardFrom() != null)
         {
             return msg.forwardFrom().id();
            
         }
         else if (part2.contains("@"))
         {
-            int temp = userNameToId(part2);
+            int temp = userNameToId(part2, chatId);
             if (temp == -1)
             {
                 return null; //TODO Added failure 
@@ -71,11 +71,11 @@ public class Removal
     
     private String setName()
     {
-        if(msg.replyToMessage()) //TODO Resolve Test
+        if(msg.replyToMessage() != null)
         {
             return msg.replyToMessage().from().firstName();
         }
-        else if(msg.forwardFrom())
+        else if(msg.forwardFrom() != null)
         {
             return msg.forwardFrom().firstName();
            
@@ -152,7 +152,7 @@ public class Removal
             String hash = "ban:"+userId;
             db.hincrby(hash, "ban", 1);
             String why;
-            if(msg.replyToMessage()) //TODO Resolve test 
+            if(msg.replyToMessage() != null) 
             {
                why = part2; 
             }

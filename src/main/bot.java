@@ -7,17 +7,19 @@ package main;
 
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.TelegramBotAdapter;
-import com.pengrad.telegrambot.model.ChatMember.Status;
+import com.pengrad.telegrambot.model.ChatMember;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.model.request.ParseMode;
-import com.pengrad.telegrambot.model.request.ReplyKeyboardMarkup;
+import com.pengrad.telegrambot.request.GetChatAdministrators;
 import com.pengrad.telegrambot.request.GetChatMember;
 import com.pengrad.telegrambot.request.KickChatMember;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.request.UrbanChatMember;
 import com.pengrad.telegrambot.response.BaseResponse;
+import com.pengrad.telegrambot.response.GetChatAdministratorsResponse;
 import com.pengrad.telegrambot.response.GetChatMemberResponse;
 import com.pengrad.telegrambot.response.SendResponse;
+import java.util.ArrayList;
 
 /**
  *
@@ -88,5 +90,48 @@ public class bot
 
     public void sendMsgReply(Long chatId, int userId, String msg) {
         SendResponse sendResponse = bot.execute(new SendMessage(chatId, msg).replyToMessageId(userId));
+    }
+    
+    public boolean isMod(Long chatId, int userId)
+    {
+        GetChatMemberResponse res = bot.execute(new GetChatMember(chatId, userId));
+        if (!res.isOk())
+        {
+            return false;
+        }
+        String status = res.chatMember().status().toString();
+        if (status.equalsIgnoreCase("creator") || status.equalsIgnoreCase("administrator"))
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    public ArrayList<ChatMember> getModList(Long chatId, int userId)
+    {
+        ArrayList<ChatMember> mods = new ArrayList<>();
+        GetChatAdministratorsResponse res = bot.execute(new GetChatAdministrators(chatId));
+        if(!res.isOk())
+        {
+            
+        }
+        
+        for (int i = 0; i < res.administrators().size(); i++) 
+        {
+            if(res.administrators().get(i).status().toString().equalsIgnoreCase("creator"))
+            {
+                mods.add(res.administrators().get(i));
+                break;
+            }
+        }
+        if(res.administrators().size() > 0)
+        {
+            for (int i = 0; i < res.administrators().size(); i++) 
+            {
+                mods.add(res.administrators().get(i));
+            }
+        }
+        
+        return mods;
     }
 }

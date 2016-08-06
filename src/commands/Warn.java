@@ -37,7 +37,7 @@ public class Warn
     
     public void WarnUsr()
     {
-        if(!msg.replyToMessage().equals("nul"))
+        if(msg.replyToMessage() != null)
         {
             String name = msg.replyToMessage().from().firstName();
             Long chatId = msg.chat().id();
