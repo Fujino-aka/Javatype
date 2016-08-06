@@ -33,7 +33,7 @@ public class Main_en extends ListResourceBundle {
         {"last_msg", "`Last message here`: "},
         {"global_msgs", "`Total number of messages`: "},
         {"global_media", "`Total number of media`: "},
-        {"remwarns_kb", "Remove warns"}
+        {"remwarns_kb", "Remove warns"},
 
         {"header", "*Global stats* for "},
         {"nothing", "`Nothing to display`"},
@@ -46,7 +46,7 @@ public class Main_en extends ListResourceBundle {
         {"arab", "Removed for arab chars: "},
         {"rtl", "Removed for RTL char: "},
         {"kicked", "_Kicked!_"},
-        {"banned", "_Banned!_"}
+        {"banned", "_Banned!_"},
 
         {"general_pm", "_I\'ve sent you the message in private_"},
         {"no_user", "I\'ve never seen this user before.\nIf you want to teach me who they are, forward me a message from them"},
@@ -61,14 +61,14 @@ public class Main_en extends ListResourceBundle {
         {"menu_cb_media", "Tap on a switch!"},
         {"tell", "*Group ID*: &&&1"},
 
-        {"not_mod", "You are *not* an admin"}
-        {"breaks_markdown", "This text breaks the markdown.\nMore info about a proper use of markdown [here](https://telegram.me/GroupButler_ch/46)."}
-        {"credits", "*Some useful links:*"}
-        {"setted", "&&&1 command saved!"}
-        {"no_commands", "No commands set!"}
-        {"commands_list", "List of *custom commands*:\n&&&1"}
-        {"command_deleted", "&&&1 command have been deleted"}
-        {"command_empty", "&&&1 command does not exist"}
+        {"not_mod", "You are *not* an admin"},
+        {"breaks_markdown", "This text breaks the markdown.\nMore info about a proper use of markdown [here](https://telegram.me/GroupButler_ch/46)."},
+        {"credits", "*Some useful links:*"},
+        {"setted", "&&&1 command saved!"},
+        {"no_commands", "No commands set!"},
+        {"commands_list", "List of *custom commands*:\n&&&1"},
+        {"command_deleted", "&&&1 command have been deleted"},
+        {"command_empty", "&&&1 command does not exist"},
   
         {"banhammer", "*Admins: banhammer powers*\n\n"
                          +"`/kick [by reply|username]` = kick a user from the group (they can be added again).\n"
@@ -171,7 +171,7 @@ public class Main_en extends ListResourceBundle {
         {"no_input_set", "Please write something next /setabout"},
         {"clean", "The description has been cleaned."},
         {"new", "*New description:*\n&&&1"},
-        {"about_setted", "New description *saved successfully*!"}
+        {"about_setted", "New description *saved successfully*!"},
 
         //setrules
         {"no_rules", "*Total anarchy*!"},
@@ -181,7 +181,7 @@ public class Main_en extends ListResourceBundle {
         {"no_input_set", "Please write something next /setrules"},
         {"clean", "Rules have been cleaned."},
         {"new", "*New rules:*\n&&&1"},
-        {"rules_setted", "New rules *saved successfully*!"}
+        {"rules_setted", "New rules *saved successfully*!"},
 
         //settings
         {"rules_locked", "/rules command is now available only for admins"},
@@ -231,7 +231,7 @@ public class Main_en extends ListResourceBundle {
         {"w_no", "*Welcome type*: `welcome only`\n"},
         {"w_media", "*Welcome type*: `gif/sticker`\n"},
         {"w_custom", "*Welcome type*: `custom message`\n"},
-        {"legenda", "✅ = _enabled/allowed_\n🚫 = _disabled/not allowed_\n👥 = _sent in group (always for admins)_\n👤 = _sent in private_"}
+        {"legenda", "✅ = _enabled/allowed_\n🚫 = _disabled/not allowed_\n👥 = _sent in group (always for admins)_\n👤 = _sent in private_"},
 
         {"arab_kick", "Users that type arab characters will be kicked"},
         {"arab_ban", "Users that type arab characters will be banned"},
@@ -269,7 +269,7 @@ public class Main_en extends ListResourceBundle {
                  +"`!`<feedback> : send a feedback/report a bug/ask a question to my creator. (Example: !Your bot is awesome)\n"
                  +"`/help` : show this message."
                  +"I\'m a bot created to help manage Werewolf groups which use @werewolfbot.\n"
-                 +"\n*What can I do for you?*\n"}
+                 +"\n*What can I do for you?*\n"},
                  +"Wew, I have a lot of useful tools!\n"
                  +"• You can *kick or ban* users (even in normal groups) by reply/username\n"
                  +"• Set rules and a description\n"
@@ -278,104 +278,104 @@ public class Main_en extends ListResourceBundle {
                  +"• Warn users, and kick/ban them if they reach a max number of warns\n"
                  +"• Warn or kick users if they send a specific media\n"
                  +"+.and more, below you can find the "all commands" button to get the whole list!\n"
-                 +"\nTo use me, *you need to add me as administrator of the group*, or Telegram won\"}t let me work properly! (if you have some doubts about this, check [this post](https://telegram.me/GroupButler_ch/63))"
+                 +"\nTo use me, *you need to add me as administrator of the group*, or Telegram won\"},t let me work properly! (if you have some doubts about this, check [this post](https://telegram.me/GroupButler_ch/63))"
                  +"\nYou can report bugs/send feedbacks/ask a question to my creator just using "`!<feedback>`"."},
          {"group_success", "_I\'ve sent you the help message in PM_"},
          {"group_not_success", "_Please PM me first so I can PM you_"},
          {"initial", "Choose the *role* to see the available commands:"},
-         {"kb_header", "Tap on a button to see the *related commands*"}
+         {"kb_header", "Tap on a button to see the *related commands*"},
 
 
-        {"no_input", "Reply to a message to report it to an admin, or write something next \'@admin\' to send a feedback to them"}
-        {"reported", "Reported!"}
-        {"no_reply", "Reply to a user!"}
-        {"blocked", "From now, this user can\'t use \'@admin\'"}
-        {"already_blocked", "This user is already unable to use \'@admin\'"}
-        {"unblocked", "This user now can use \'@admin\'"}
-        {"already_unblocked", "This user is already able to use \'@admin\'"}
+        {"no_input", "Reply to a message to report it to an admin, or write something next \'@admin\' to send a feedback to them"},
+        {"reported", "Reported!"},
+        {"no_reply", "Reply to a user!"},
+        {"blocked", "From now, this user can\'t use \'@admin\'"},
+        {"already_blocked", "This user is already unable to use \'@admin\'"},
+        {"unblocked", "This user now can use \'@admin\'"},
+        {"already_unblocked", "This user is already able to use \'@admin\'"},
 
-        {"flood_ban", "&&&1 *banned* for flood!"}
-        {"flood_kick", "&&&1 *kicked* for flood!"}
-        {"media_kick", "&&&1 *kicked*: media sent not allowed!"}
-        {"media_ban", "&&&1 *banned*: media sent not allowed!"}
-        {"rtl_kicked", "&&&1 *kicked*: RTL character in names/messages not allowed!"}
-        {"arab_kicked", "&&&1 *kicked*: arab messages not allowed!"}
-        {"rtl_banned", "&&&1 *banned*: RTL character in names/messages not allowed!"}
-        {"arab_banned", "&&&1 *banned*: arab messages not allowed!"}
-        {"flood_motivation", "Banned for flood"}
-        {"media_motivation", "Sent a forbidden media"}
-        {"first_warn", "This type of media is *not allowed* in this chat."}
+        {"flood_ban", "&&&1 *banned* for flood!"},
+        {"flood_kick", "&&&1 *kicked* for flood!"},
+        {"media_kick", "&&&1 *kicked*: media sent not allowed!"},
+        {"media_ban", "&&&1 *banned*: media sent not allowed!"},
+        {"rtl_kicked", "&&&1 *kicked*: RTL character in names/messages not allowed!"},
+        {"arab_kicked", "&&&1 *kicked*: arab messages not allowed!"},
+        {"rtl_banned", "&&&1 *banned*: RTL character in names/messages not allowed!"},
+        {"arab_banned", "&&&1 *banned*: arab messages not allowed!"},
+        {"flood_motivation", "Banned for flood"},
+        {"media_motivation", "Sent a forbidden media"},
+        {"first_warn", "This type of media is *not allowed* in this chat."},
  
-        {"warn", "This kind of media is *not allowed* in this group.\n_Next time_ you will be kicked or banned"}
-        {"settings_header", "*Current settings for media*:\n\n"}
-        {"changed", "New status for [&&&1] = &&&2"}
+        {"warn", "This kind of media is *not allowed* in this group.\n_Next time_ you will be kicked or banned"},
+        {"settings_header", "*Current settings for media*:\n\n"},
+        {"changed", "New status for [&&&1] = &&&2"},
 
-        {"number_invalid", "`&&&1` is not a valid value!\nThe value should be *higher* than `3` and *lower* then `26`"}
-        {"not_changed", "The max number of messages is already &&&1"}
-        {"changed_plug", "The *max number* of messages (in *5 seconds*) changed _from_  &&&1 _to_  &&&2"}
-        {"kick", "From now, flooders will be kicked"}
-        {"ban", "From now, flooders will be banned"}
-        {"changed_cross", "&&&1 -> &&&2"}
-        {"text", "Texts"}
-        {"image", "Images"}
-        {"sticker", "Stickers"}
-        {"gif", "Gif"}
-        {"video", "Videos"}
-        {"sent", "_I\'ve sent you the anti-flood menu in private_"}
-        {"ignored", "[&&&1] will be ignored by the anti-flood"}
-        {"not_ignored", "[&&&1] won\'t be ignored by the anti-flood"}
-        {"number_cb", "Current sensitivity. Tap on the + or the -"}
+        {"number_invalid", "`&&&1` is not a valid value!\nThe value should be *higher* than `3` and *lower* then `26`"},
+        {"not_changed", "The max number of messages is already &&&1"},
+        {"changed_plug", "The *max number* of messages (in *5 seconds*) changed _from_  &&&1 _to_  &&&2"},
+        {"kick", "From now, flooders will be kicked"},
+        {"ban", "From now, flooders will be banned"},
+        {"changed_cross", "&&&1 -> &&&2"},
+        {"text", "Texts"},
+        {"image", "Images"},
+        {"sticker", "Stickers"},
+        {"gif", "Gif"},
+        {"video", "Videos"},
+        {"sent", "_I\'ve sent you the anti-flood menu in private_"},
+        {"ignored", "[&&&1] will be ignored by the anti-flood"},
+        {"not_ignored", "[&&&1] won\'t be ignored by the anti-flood"},
+        {"number_cb", "Current sensitivity. Tap on the + or the -"},
 
-        {"broken_group", "There are no settings saved for this group.\nPlease run /initgroup to solve the problem :)"}
-        {"Rules", "/rules"}
-        {"About", "/about"}
-        {"Welcome", "Welcome message"}
-        {"Modlist", "/adminlist"}
-        {"Flag", "Flag"}
-        {"Extra", "Extra"}
-        {"Flood", "Anti-flood"}
-        {"Rtl", "RTL"}
-        {"Arab", "Arab"}
-        {"Report", "Report"}
-        {"Admin_mode", "Admin mode"}
+        {"broken_group", "There are no settings saved for this group.\nPlease run /initgroup to solve the problem :)"},
+        {"Rules", "/rules"},
+        {"About", "/about"},
+        {"Welcome", "Welcome message"},
+        {"Modlist", "/adminlist"},
+        {"Flag", "Flag"},
+        {"Extra", "Extra"},
+        {"Flood", "Anti-flood"},
+        {"Rtl", "RTL"},
+        {"Arab", "Arab"},
+        {"Report", "Report"},
+        {"Admin_mode", "Admin mode"},
 
-        {"warn_reply", "Reply to a message to warn the user"}
-        {"changed_type", "New action on max number of warns received: *&&&1*"}
-        {"mod", "An admin can\'t be warned"}
-        {"warned_max_kick", "User &&&1 *kicked*: reached the max number of warns"}
-        {"warned_max_ban", "User &&&1 *banned*: reached the max number of warns"}
-        {"warned", "&&&1 *has been warned.*\n_Number of warns_   *&&&2*\n_Max allowed_   *&&&3*"}
-        {"warnmax", "Max number of warns changed&&&3.\n*Old* value: &&&1\n*New* value: &&&2"}
-        {"getwarns_reply", "Reply to a user to check his number of warns"}
-        {"getwarns", "&&&1 (*&&&2/&&&3*)\nMedia: (*&&&4/&&&5*)"}
-        {"nowarn_reply", "Reply to a user to remove his warns"}
-        {"warn_removed", "*Warn removed!*\n_Number of warns_   *&&&1*\n_Max allowed_   *&&&2*"}
-        {"ban_motivation", "Too many warns"}
-        {"inline_high", "The new value is too high (>12)"}
-        {"inline_low", "The new value is too low (<1)"}
-        {"zero", "The number of warns received by this user is already _zero_"}
-        {"nowarn", "The number of warns received by this user has been *reset*"}
+        {"warn_reply", "Reply to a message to warn the user"},
+        {"changed_type", "New action on max number of warns received: *&&&1*"},
+        {"mod", "An admin can\'t be warned"},
+        {"warned_max_kick", "User &&&1 *kicked*: reached the max number of warns"},
+        {"warned_max_ban", "User &&&1 *banned*: reached the max number of warns"},
+        {"warned", "&&&1 *has been warned.*\n_Number of warns_   *&&&2*\n_Max allowed_   *&&&3*"},
+        {"warnmax", "Max number of warns changed&&&3.\n*Old* value: &&&1\n*New* value: &&&2"},
+        {"getwarns_reply", "Reply to a user to check his number of warns"},
+        {"getwarns", "&&&1 (*&&&2/&&&3*)\nMedia: (*&&&4/&&&5*)"},
+        {"nowarn_reply", "Reply to a user to remove his warns"},
+        {"warn_removed", "*Warn removed!*\n_Number of warns_   *&&&1*\n_Max allowed_   *&&&2*"},
+        {"ban_motivation", "Too many warns"},
+        {"inline_high", "The new value is too high (>12)"},
+        {"inline_low", "The new value is too low (<1)"},
+        {"zero", "The number of warns received by this user is already _zero_"},
+        {"nowarn", "The number of warns received by this user has been *reset*"},
 
-        {"list", "*List of available languages:*"}
-        {"success", "*New language set:* &&&1"}
-        {"error", "Language not supported yet"}
+        {"list", "*List of available languages:*"},
+        {"success", "*New language set:* &&&1"},
+        {"error", "Language not supported yet"},
 
-        {"kicked", "`&&&1` kicked `&&&2`!"}
-        {"banned", "`&&&1` banned `&&&2`!"}
-        {"already_banned_normal", "&&&1 is *already banned*!"}
-        {"unbanned", "User unbanned!"}
-        {"reply", "Reply to someone"}
-        {"globally_banned", "&&&1 has been globally banned!"}
-        {"not_banned", "The user is not banned"}
-        {"banlist_header", "*Banned users*:\n\n"}
-        {"banlist_empty", "_The list is empty_"}
-        {"banlist_error", "_An error occurred while cleaning the banlist_"}
-        {"banlist_cleaned", "_The banlist has been cleaned_"}
-        {"tempban_zero", "For this, you can directly use /ban"}
-        {"tempban_week", "The time limit is one week (10.080 minutes)"}
-        {"tempban_banned", "User &&&1 banned. Ban expiration:"}
-        {"tempban_updated", "Ban time updated for &&&1. Ban expiration:"}
-        {"general_motivation", "I can\'t kick this user.\nProbably I\'m not an admin, or the user is an admin"}
+        {"kicked", "`&&&1` kicked `&&&2`!"},
+        {"banned", "`&&&1` banned `&&&2`!"},
+        {"already_banned_normal", "&&&1 is *already banned*!"},
+        {"unbanned", "User unbanned!"},
+        {"reply", "Reply to someone"},
+        {"globally_banned", "&&&1 has been globally banned!"},
+        {"not_banned", "The user is not banned"},
+        {"banlist_header", "*Banned users*:\n\n"},
+        {"banlist_empty", "_The list is empty_"},
+        {"banlist_error", "_An error occurred while cleaning the banlist_"},
+        {"banlist_cleaned", "_The banlist has been cleaned_"},
+        {"tempban_zero", "For this, you can directly use /ban"},
+        {"tempban_week", "The time limit is one week (10.080 minutes)"},
+        {"tempban_banned", "User &&&1 banned. Ban expiration:"},
+        {"tempban_updated", "Ban time updated for &&&1. Ban expiration:"},
+        {"general_motivation", "I can\'t kick this user.\nProbably I\'m not an admin, or the user is an admin"},
 
         {"header". "You can manage the group flood settings from here.\n"
              +"\n*1st row*\n"
@@ -389,7 +389,7 @@ public class Main_en extends ListResourceBundle {
              +"You can set some exceptions for the anti-flood:\n"
              +"• ✅: the media will be ignored by the anti-flood\n"
              +"• ❌: the media won\"t be ignored by the anti-flood\n"
-             +"• *Note*: in "_texts_" are included all the other types of media (file, audio, etc)"}
+             +"• *Note*: in "_texts_" are included all the other types of media (file, audio, etc)"},
  
         {"menu_first". "Manage the settings of the group.\n"
              +"\nSome commands (_/rules, /about, /adminlist, #extra commands_) can be *disabled for non-admin users*\n"
@@ -410,7 +410,7 @@ public class Main_en extends ListResourceBundle {
         {"group_success", "_I\'ve sent you the help message in PM_"},
         {"group_not_success", "_Please PM me first so I can PM you_"},
         {"initial", "Choose the *role* to see the available commands:"},
-        {"kb_header", "Tap on a button to see the *related commands*"}
+        {"kb_header", "Tap on a button to see the *related commands*"},
  
         {"private", "_I\'ve sent you the group dashboard in private_"},
         {"first", "Navigate this message to see *all the info* about this group!"},
@@ -427,14 +427,14 @@ public class Main_en extends ListResourceBundle {
         {"[1]", "I\'m not an admin, I can\'t kick people"},
         {"[2]", "I can\'t kick or ban an admin"},
         {"[3]", "There is no need to unban in a normal group"},
-        {"[4]", "This user is not a chat member"},
+        {"[4]", "This user is not a chat member"}
  
 
     @Override
     protected Object[][] getContents() {
         return contents;
-    }
-}
+    },
+},
 
 
 
