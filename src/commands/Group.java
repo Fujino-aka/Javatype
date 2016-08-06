@@ -84,7 +84,6 @@ public class Group
         }
         else
         {
-            api.sendMsgReply(chatId, sendId, "Please reply or tag someone");
             return null;
         }
     }
@@ -131,7 +130,7 @@ public class Group
     
     public void adminList()
     {
-        ArrayList<ChatMember> mods = api.getModList(chatId, userId);
+        ArrayList<ChatMember> mods = api.getModList(chatId, sendId);
         String creator = mods.get(0).user().firstName() + " " + mods.get(0).user().lastName();
         String admins = "";
         int count = 1;
@@ -141,7 +140,7 @@ public class Group
             count++;
         }
         String text = Govern.getLang(lang, "modlist", creator, admins);
-        api.sendMsgReply(chatId, userId, text);
+        api.sendMsgReply(chatId, sendId, text);
     }
 
     private boolean isLocked(String setting) 
@@ -158,5 +157,17 @@ public class Group
             return true;
         }
         return false;
+    }
+    
+    public void id()
+    {
+        if(userId != -1)
+        {
+            api.sendMsgReply(chatId, sendId, "`"+userId+"`", true);
+        }
+        else
+        {
+            api.sendMsgReply(chatId, sendId, "`"+chatId+"`", true);
+        }
     }
 }

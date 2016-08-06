@@ -29,35 +29,35 @@ public class bot
 {
     TelegramBot bot = TelegramBotAdapter.build("BOT_TOKEN");
     
-    public BaseResponse ban(Long chatId, int usrId)
+    public BaseResponse ban(Long chatId, int userId)
     {
-        BaseResponse ban = bot.execute(new KickChatMember(chatId, usrId));
+        BaseResponse ban = bot.execute(new KickChatMember(chatId, userId));
         return ban;
     }
     
-    public BaseResponse kick(Long chatId, int usrId)
+    public BaseResponse kick(Long chatId, int userId)
     {
-        BaseResponse kick = bot.execute(new KickChatMember(chatId, usrId));
+        BaseResponse kick = bot.execute(new KickChatMember(chatId, userId));
         if (kick.isOk())
         {
-            GetChatMemberResponse check = bot.execute(new GetChatMember(chatId, usrId));
+            GetChatMemberResponse check = bot.execute(new GetChatMember(chatId, userId));
             String status = check.chatMember().status().toString();
             int count = 0;
             while ("kicked".equalsIgnoreCase(status))
             {
-                BaseResponse unBan = bot.execute(new UrbanChatMember(chatId, usrId));
-                check = bot.execute(new GetChatMember(chatId, usrId));
+                BaseResponse unBan = bot.execute(new UrbanChatMember(chatId, userId));
+                check = bot.execute(new GetChatMember(chatId, userId));
                 status = check.chatMember().status().toString();
                 count = count + 1;
             }
             if (count == 0)
             {
-                check = bot.execute(new GetChatMember(chatId, usrId));
+                check = bot.execute(new GetChatMember(chatId, userId));
                 status = check.chatMember().status().toString();
                 while ("kicked".equalsIgnoreCase(status))
                 {
-                    BaseResponse unBan = bot.execute(new UrbanChatMember(chatId, usrId));
-                    check = bot.execute(new GetChatMember(chatId, usrId));
+                    BaseResponse unBan = bot.execute(new UrbanChatMember(chatId, userId));
+                    check = bot.execute(new GetChatMember(chatId, userId));
                     status = check.chatMember().status().toString();
                     count = count + 1;
                 }
@@ -78,7 +78,7 @@ public class bot
     }
 
     public SendResponse sendKeys(Long chatId, String text, InlineKeyboardMarkup keys, boolean b, Integer messageId) {
-        SendResponse sendResponse = bot.execute(new SendMessage(chatId, text).replyMarkup(keys).parseMode(ParseMode.HTML).replyToMessageId(messageId));   
+        SendResponse sendResponse = bot.execute(new SendMessage(chatId, text).replyMarkup(keys).parseMode(ParseMode.Markdown).replyToMessageId(messageId));   
         return sendResponse;
     }
     
@@ -88,13 +88,13 @@ public class bot
         return sendResponse;
     }
 
-    public void sendMsgReply(Long chatId, int userId, String msg) {
-        SendResponse sendResponse = bot.execute(new SendMessage(chatId, msg).replyToMessageId(userId));
+    public void sendMsgReply(Long chatId, int sendId, String msg) {
+        SendResponse sendResponse = bot.execute(new SendMessage(chatId, msg).replyToMessageId(sendId));
     }
     
-    public boolean isMod(Long chatId, int userId)
+    public boolean isMod(Long chatId, int sendId)
     {
-        GetChatMemberResponse res = bot.execute(new GetChatMember(chatId, userId));
+        GetChatMemberResponse res = bot.execute(new GetChatMember(chatId, sendId));
         if (!res.isOk())
         {
             return false;
@@ -107,7 +107,7 @@ public class bot
         return false;
     }
     
-    public ArrayList<ChatMember> getModList(Long chatId, int userId)
+    public ArrayList<ChatMember> getModList(Long chatId, int sendId)
     {
         ArrayList<ChatMember> mods = new ArrayList<>();
         GetChatAdministratorsResponse res = bot.execute(new GetChatAdministrators(chatId));
@@ -133,5 +133,9 @@ public class bot
         }
         
         return mods;
+    }
+
+    public void sendMsgReply(Long chatId, int sendId, String string, boolean b) {
+        SendResponse sendResponse = bot.execute(new SendMessage(chatId, string).parseMode(ParseMode.Markdown).replyToMessageId(sendId));
     }
 }

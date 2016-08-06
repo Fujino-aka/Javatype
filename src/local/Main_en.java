@@ -5,9 +5,7 @@
  */
 package local;
 
-import java.util.Enumeration;
 import java.util.ListResourceBundle;
-import java.util.ResourceBundle;
 
 
 /**
@@ -270,7 +268,7 @@ public class Main_en extends ListResourceBundle {
                  +"`/help` : show this message."
                  +"I\'m a bot created to help manage Werewolf groups which use @werewolfbot.\n"
                  +"\n*What can I do for you?*\n"},
-                 +"Wew, I have a lot of useful tools!\n"
+            "Wew, I have a lot of useful tools!\n"
                  +"• You can *kick or ban* users (even in normal groups) by reply/username\n"
                  +"• Set rules and a description\n"
                  +"• Turn on a configurable *anti-flood* system\n"
@@ -279,7 +277,7 @@ public class Main_en extends ListResourceBundle {
                  +"• Warn or kick users if they send a specific media\n"
                  +"+.and more, below you can find the "all commands" button to get the whole list!\n"
                  +"\nTo use me, *you need to add me as administrator of the group*, or Telegram won\"},t let me work properly! (if you have some doubts about this, check [this post](https://telegram.me/GroupButler_ch/63))"
-                 +"\nYou can report bugs/send feedbacks/ask a question to my creator just using "`!<feedback>`"."},
+                 +"\nYou can report bugs/send feedbacks/ask a question to my creator just using"},
          {"group_success", "_I\'ve sent you the help message in PM_"},
          {"group_not_success", "_Please PM me first so I can PM you_"},
          {"initial", "Choose the *role* to see the available commands:"},
@@ -428,13 +426,8 @@ public class Main_en extends ListResourceBundle {
         {"[2]", "I can\'t kick or ban an admin"},
         {"[3]", "There is no need to unban in a normal group"},
         {"[4]", "This user is not a chat member"}
- 
-
-    @Override
-    protected Object[][] getContents() {
-        return contents;
-    },
-},
+    }
+}
 
 
 
