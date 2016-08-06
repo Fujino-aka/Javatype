@@ -286,10 +286,149 @@ public class Main_en extends ListResourceBundle {
          {"kb_header", "Tap on a button to see the *related commands*"}
 
 
+        {"no_input", "Reply to a message to report it to an admin, or write something next \'@admin\' to send a feedback to them"}
+        {"reported", "Reported!"}
+        {"no_reply", "Reply to a user!"}
+        {"blocked", "From now, this user can\'t use \'@admin\'"}
+        {"already_blocked", "This user is already unable to use \'@admin\'"}
+        {"unblocked", "This user now can use \'@admin\'"}
+        {"already_unblocked", "This user is already able to use \'@admin\'"}
+
+        {"flood_ban", "&&&1 *banned* for flood!"}
+        {"flood_kick", "&&&1 *kicked* for flood!"}
+        {"media_kick", "&&&1 *kicked*: media sent not allowed!"}
+        {"media_ban", "&&&1 *banned*: media sent not allowed!"}
+        {"rtl_kicked", "&&&1 *kicked*: RTL character in names/messages not allowed!"}
+        {"arab_kicked", "&&&1 *kicked*: arab messages not allowed!"}
+        {"rtl_banned", "&&&1 *banned*: RTL character in names/messages not allowed!"}
+        {"arab_banned", "&&&1 *banned*: arab messages not allowed!"}
+        {"flood_motivation", "Banned for flood"}
+        {"media_motivation", "Sent a forbidden media"}
+        {"first_warn", "This type of media is *not allowed* in this chat."}
+ 
+        {"warn", "This kind of media is *not allowed* in this group.\n_Next time_ you will be kicked or banned"}
+        {"settings_header", "*Current settings for media*:\n\n"}
+        {"changed", "New status for [&&&1] = &&&2"}
+
+        {"number_invalid", "`&&&1` is not a valid value!\nThe value should be *higher* than `3` and *lower* then `26`"}
+        {"not_changed", "The max number of messages is already &&&1"}
+        {"changed_plug", "The *max number* of messages (in *5 seconds*) changed _from_  &&&1 _to_  &&&2"}
+        {"kick", "From now, flooders will be kicked"}
+        {"ban", "From now, flooders will be banned"}
+        {"changed_cross", "&&&1 -> &&&2"}
+        {"text", "Texts"}
+        {"image", "Images"}
+        {"sticker", "Stickers"}
+        {"gif", "Gif"}
+        {"video", "Videos"}
+        {"sent", "_I\'ve sent you the anti-flood menu in private_"}
+        {"ignored", "[&&&1] will be ignored by the anti-flood"}
+        {"not_ignored", "[&&&1] won\'t be ignored by the anti-flood"}
+        {"number_cb", "Current sensitivity. Tap on the + or the -"}
+
+        {"broken_group", "There are no settings saved for this group.\nPlease run /initgroup to solve the problem :)"}
+        {"Rules", "/rules"}
+        {"About", "/about"}
+        {"Welcome", "Welcome message"}
+        {"Modlist", "/adminlist"}
+        {"Flag", "Flag"}
+        {"Extra", "Extra"}
+        {"Flood", "Anti-flood"}
+        {"Rtl", "RTL"}
+        {"Arab", "Arab"}
+        {"Report", "Report"}
+        {"Admin_mode", "Admin mode"}
+
+        {"warn_reply", "Reply to a message to warn the user"}
+        {"changed_type", "New action on max number of warns received: *&&&1*"}
+        {"mod", "An admin can\'t be warned"}
+        {"warned_max_kick", "User &&&1 *kicked*: reached the max number of warns"}
+        {"warned_max_ban", "User &&&1 *banned*: reached the max number of warns"}
+        {"warned", "&&&1 *has been warned.*\n_Number of warns_   *&&&2*\n_Max allowed_   *&&&3*"}
+        {"warnmax", "Max number of warns changed&&&3.\n*Old* value: &&&1\n*New* value: &&&2"}
+        {"getwarns_reply", "Reply to a user to check his number of warns"}
+        {"getwarns", "&&&1 (*&&&2/&&&3*)\nMedia: (*&&&4/&&&5*)"}
+        {"nowarn_reply", "Reply to a user to remove his warns"}
+        {"warn_removed", "*Warn removed!*\n_Number of warns_   *&&&1*\n_Max allowed_   *&&&2*"}
+        {"ban_motivation", "Too many warns"}
+        {"inline_high", "The new value is too high (>12)"}
+        {"inline_low", "The new value is too low (<1)"}
+        {"zero", "The number of warns received by this user is already _zero_"}
+        {"nowarn", "The number of warns received by this user has been *reset*"}
+
+        {"list", "*List of available languages:*"}
+        {"success", "*New language set:* &&&1"}
+        {"error", "Language not supported yet"}
+
+        {"kicked", "`&&&1` kicked `&&&2`!"}
+        {"banned", "`&&&1` banned `&&&2`!"}
+        {"already_banned_normal", "&&&1 is *already banned*!"}
+        {"unbanned", "User unbanned!"}
+        {"reply", "Reply to someone"}
+        {"globally_banned", "&&&1 has been globally banned!"}
+        {"not_banned", "The user is not banned"}
+        {"banlist_header", "*Banned users*:\n\n"}
+        {"banlist_empty", "_The list is empty_"}
+        {"banlist_error", "_An error occurred while cleaning the banlist_"}
+        {"banlist_cleaned", "_The banlist has been cleaned_"}
+        {"tempban_zero", "For this, you can directly use /ban"}
+        {"tempban_week", "The time limit is one week (10.080 minutes)"}
+        {"tempban_banned", "User &&&1 banned. Ban expiration:"}
+        {"tempban_updated", "Ban time updated for &&&1. Ban expiration:"}
+        {"general_motivation", "I can\'t kick this user.\nProbably I\'m not an admin, or the user is an admin"}
+
+        {"header". "You can manage the group flood settings from here.\n"
+             +"\n*1st row*\n"
+             +"• *ON/OFF*: the current status of the anti-flood\n"
+             +"• *Kick/Ban*: what to do when someone is flooding\n"
+             +"\n*2nd row*\n"
+             +"• you can use *+/-* to change the current sensitivity of the anti-flood system\n"
+             +"• the number is the max number of messages that can be sent in _5 seconds_\n"
+             +"• max value: _25_ - min value: _4_\n"
+             +"\n*3rd row* and below\n"
+             +"You can set some exceptions for the anti-flood:\n"
+             +"• ✅: the media will be ignored by the anti-flood\n"
+             +"• ❌: the media won\"t be ignored by the anti-flood\n"
+             +"• *Note*: in "_texts_" are included all the other types of media (file, audio, etc)"}
+ 
+        {"menu_first". "Manage the settings of the group.\n"
+             +"\nSome commands (_/rules, /about, /adminlist, #extra commands_) can be *disabled for non-admin users*\n"
+             +"What happens if a command is disabled for non-admins:\n"
+             +"• If the command is triggered by an admin, the bot will reply *in the group*\n"
+             +"• If the command is triggered by a normal user, the bot will reply *in the private chat with the user* (only if the user has already started the bot)\n"
+             +"\nThe icons near the command will show the current status:\n"
+             +"• 👥: the bot will reply *in the group*, with everyone\n"
+             +"• 👤: the bot will reply *in private* with normal users and in the group with admins\n"
+             +"\n*Other settings*: for the other settings, icons are self explanatory\n"},
+
+        {"media_first". "Tap on a voice in the right column to *change the setting*\n"
+                +"You can use the last line to change how many warns should the bot give before kick/ban someone for a forbidden media\n"
+                +"The number is not related to the normal `/warn` command"},
 
 
+        {"menu", "_I\''ve sent you the settings menu in private_"},
+        {"group_success", "_I\'ve sent you the help message in PM_"},
+        {"group_not_success", "_Please PM me first so I can PM you_"},
+        {"initial", "Choose the *role* to see the available commands:"},
+        {"kb_header", "Tap on a button to see the *related commands*"}
+ 
+        {"private", "_I\'ve sent you the group dashboard in private_"},
+        {"first", "Navigate this message to see *all the info* about this group!"},
+        {"antiflood", "- *Status*: `&&&1`\n- *Action* when an user floods: `&&&2`\n- Number of messages *every 5 seconds* allowed: `&&&3`\n- *Ignored media*:\n&&&4"},
+        {"settings", "Settings"},
+        {"admins", "Admins"},
+        {"rules", "Rules"},
+        {"about", "Description"},
+        {"welcome", "Welcome message"},
+        {"extra", "Extra commands"},
+        {"media", "Media settings"},
+        {"flood", "Flood settings"},
 
-    };
+        {"[1]", "I\'m not an admin, I can\'t kick people"},
+        {"[2]", "I can\'t kick or ban an admin"},
+        {"[3]", "There is no need to unban in a normal group"},
+        {"[4]", "This user is not a chat member"},
+ 
 
     @Override
     protected Object[][] getContents() {
@@ -299,150 +438,3 @@ public class Main_en extends ListResourceBundle {
 
 
 
-    
-         },
-         broken_group = 'There are no settings saved for this group.\nPlease run /initgroup to solve the problem :)',
-         Rules = '/rules',
-         About = '/about',
-         Welcome = 'Welcome message',
-         Modlist = '/adminlist',
-         Flag = 'Flag',
-         Extra = 'Extra',
-         Flood = 'Anti-flood',
-         Rtl = 'RTL',
-         Arab = 'Arab',
-         Report = 'Report',
-         Admin_mode = 'Admin mode',
-     },
-     warn = {
-         warn_reply = 'Reply to a message to warn the user',
-         changed_type = 'New action on max number of warns received: *&&&1*',
-         mod = 'An admin can\'t be warned',
-         warned_max_kick = 'User &&&1 *kicked*: reached the max number of warns',
-         warned_max_ban = 'User &&&1 *banned*: reached the max number of warns',
-         warned = '&&&1 *has been warned.*\n_Number of warns_   *&&&2*\n_Max allowed_   *&&&3*',
-         warnmax = 'Max number of warns changed&&&3.\n*Old* value: &&&1\n*New* value: &&&2',
-         getwarns_reply = 'Reply to a user to check his number of warns',
-         getwarns = '&&&1 (*&&&2/&&&3*)\nMedia: (*&&&4/&&&5*)',
-         nowarn_reply = 'Reply to a user to remove his warns',
-         warn_removed = '*Warn removed!*\n_Number of warns_   *&&&1*\n_Max allowed_   *&&&2*',
-         ban_motivation = 'Too many warns',
-         inline_high = 'The new value is too high (>12)',
-         inline_low = 'The new value is too low (<1)',
-         zero = 'The number of warns received by this user is already _zero_',
-         nowarn = 'The number of warns received by this user has been *reset*'
-     },
-     setlang = {
-         list = '*List of available languages:*',
-         success = '*New language set:* &&&1',
-         error = 'Language not supported yet'
-     },
-//		banhammer = {
-         kicked = '`&&&1` kicked `&&&2`!',
-         banned = '`&&&1` banned `&&&2`!',
-         already_banned_normal = '&&&1 is *already banned*!',
-         unbanned = 'User unbanned!',
-         reply = 'Reply to someone',
-         globally_banned = '&&&1 has been globally banned!',
-         not_banned = 'The user is not banned',
-         banlist_header = '*Banned users*:\n\n',
-         banlist_empty = '_The list is empty_',
-         banlist_error = '_An error occurred while cleaning the banlist_',
-         banlist_cleaned = '_The banlist has been cleaned_',
-         tempban_zero = 'For this, you can directly use /ban',
-         tempban_week = 'The time limit is one week (10.080 minutes)',
-         tempban_banned = 'User &&&1 banned. Ban expiration:',
-         tempban_updated = 'Ban time updated for &&&1. Ban expiration:',
-         general_motivation = 'I can\'t kick this user.\nProbably I\'m not an admin, or the user is an admin'
-     },
-//
-     floodmanager = {
-         number_invalid = '`&&&1` is not a valid value!\nThe value should be *higher* than `3` and *lower* then `26`',
-         not_changed = 'The max number of messages is already &&&1',
-         changed_plug = 'The *max number* of messages (in *5 seconds*) changed _from_  &&&1 _to_  &&&2',
-         kick = 'From now, flooders will be kicked',
-         ban = 'From now, flooders will be banned',
-         changed_cross = '&&&1 -> &&&2',
-         text = 'Texts',
-         image = 'Images',
-         sticker = 'Stickers',
-         gif = 'Gif',
-         video = 'Videos',
-         sent = '_I\'ve sent you the anti-flood menu in private_',
-         ignored = '[&&&1] will be ignored by the anti-flood',
-         not_ignored = '[&&&1] won\'t be ignored by the anti-flood',
-         number_cb = 'Current sensitivity. Tap on the + or the -',
-         header = 'You can manage the group flood settings from here.\n'
-             +'\n*1st row*\n'
-             +'• *ON/OFF*: the current status of the anti-flood\n'
-             +'• *Kick/Ban*: what to do when someone is flooding\n'
-             +'\n*2nd row*\n'
-             +'• you can use *+/-* to change the current sensitivity of the anti-flood system\n'
-             +'• the number is the max number of messages that can be sent in _5 seconds_\n'
-             +'• max value: _25_ - min value: _4_\n'
-             +'\n*3rd row* and below\n'
-             +'You can set some exceptions for the anti-flood:\n'
-             +'• ✅: the media will be ignored by the anti-flood\n'
-             +'• ❌: the media won\'t be ignored by the anti-flood\n'
-             +'• *Note*: in "_texts_" are included all the other types of media (file, audio+.)'
-     },
-     mediasettings = {
-//			warn = 'This kind of media is *not allowed* in this group.\n_Next time_ you will be kicked or banned',
-         settings_header = '*Current settings for media*:\n\n',
-         changed = 'New status for [&&&1] = &&&2',
-     },
-     preprocess = {
-         flood_ban = '&&&1 *banned* for flood!',
-         flood_kick = '&&&1 *kicked* for flood!',
-         media_kick = '&&&1 *kicked*: media sent not allowed!',
-         media_ban = '&&&1 *banned*: media sent not allowed!',
-         rtl_kicked = '&&&1 *kicked*: RTL character in names/messages not allowed!',
-         arab_kicked = '&&&1 *kicked*: arab messages not allowed!',
-         rtl_banned = '&&&1 *banned*: RTL character in names/messages not allowed!',
-         arab_banned = '&&&1 *banned*: arab messages not allowed!',
-         flood_motivation = 'Banned for flood',
-         media_motivation = 'Sent a forbidden media',
-         first_warn = 'This type of media is *not allowed* in this chat.'
-     },
-     kick_errors = {
-         [1] = 'I\'m not an admin, I can\'t kick people',
-         [2] = 'I can\'t kick or ban an admin',
-         [3] = 'There is no need to unban in a normal group',
-         [4] = 'This user is not a chat member',
-     },
-     flag = {
-         no_input = 'Reply to a message to report it to an admin, or write something next \'@admin\' to send a feedback to them',
-         reported = 'Reported!',
-         no_reply = 'Reply to a user!',
-         blocked = 'From now, this user can\'t use \'@admin\'',
-         already_blocked = 'This user is already unable to use \'@admin\'',
-         unblocked = 'This user now can use \'@admin\'',
-         already_unblocked = 'This user is already able to use \'@admin\'',
-     },
-     all = {
-         dashboard = {
-             private = '_I\'ve sent you the group dashboard in private_',
-             first = 'Navigate this message to see *all the info* about this group!',
-             antiflood = '- *Status*: `&&&1`\n- *Action* when an user floods: `&&&2`\n- Number of messages *every 5 seconds* allowed: `&&&3`\n- *Ignored media*:\n&&&4',
-             settings = 'Settings',
-             admins = 'Admins',
-             rules = 'Rules',
-             about = 'Description',
-             welcome = 'Welcome message',
-             extra = 'Extra commands',
-             media = 'Media settings',
-             flood = 'Flood settings'
-         },
-         menu = '_I\'ve sent you the settings menu in private_',
-         menu_first = 'Manage the settings of the group.\n'
-             +'\nSome commands (_/rules, /about, /adminlist, #extra commands_) can be *disabled for non-admin users*\n'
-             +'What happens if a command is disabled for non-admins:\n'
-             +'• If the command is triggered by an admin, the bot will reply *in the group*\n'
-             +'• If the command is triggered by a normal user, the bot will reply *in the private chat with the user* (only if the user has already started the bot)\n'
-             +'\nThe icons near the command will show the current status:\n'
-             +'• 👥: the bot will reply *in the group*, with everyone\n'
-             +'• 👤: the bot will reply *in private* with normal users and in the group with admins\n'
-             +'\n*Other settings*: for the other settings, icons are self explanatory\n',
-         media_first = 'Tap on a voice in the right column to *change the setting*\n'
-                     +'You can use the last line to change how many warns should the bot give before kick/ban someone for a forbidden media\n'
-                     +'The number is not related to the normal `/warn` command',},
