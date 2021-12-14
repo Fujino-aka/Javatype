@@ -27,7 +27,7 @@ import java.util.ArrayList;
  */
 public class bot 
 {
-    TelegramBot bot = TelegramBotAdapter.build("BOT_TOKEN");
+    TelegramBot bot = TelegramBotAdapter.build("5061118074:AAE9TJj2EZFqbFxVi6_H7pXbLGP1haPv6h4");
     
     public BaseResponse ban(Long chatId, int userId)
     {
